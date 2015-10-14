@@ -26,7 +26,7 @@
 - dict
 - None
 
-3. PYTHON INTERPRETER
+3. PYTHON INTERPRETER  (PRACTICE #1)
     - fun with strings:
         from training.strings_fun import FOX
         - split words into list
@@ -39,26 +39,24 @@
         - multiply string
         - string formatting '{0}, {1:2}'.format('x', 7.5) # {1:20}, {1:020}, {1:.4f}, {1:x}
 
-        - a bit about flow control EXERCISE
-            - controlled with indents
-            - introduce if
-            - variable = input(prompt)
-            - raise ValueError('wrong!')
-
-            - task: write ask_ok function which asks and returns True for 'y' or 'yes' and False for 'n' or 'no' and
-                    raises ValueError for other
-
-            - strings_fun.ask_ok
-            - strings_fun.custom_log
-
 4. PYTHON SYNTAX
 - comments: #, """, '''
 - control flow: if, elif, else, while, for, break, continue, pass
 - catching exceptions
 
+- a bit about flow control EXERCISE  (PRACTICE #2)
+	- variable = input(prompt)
+	- raise ValueError('wrong!')
+
+	- task: write ask_ok function which asks and returns True for 'y' or 'yes' and False for 'n' or 'no' and
+		raises ValueError for other
+
+		- strings_fun.ask_ok
+		- strings_fun.custom_log
+
 5. EXERCISES
 - defining functions
-    - functions EXERCISE (add name to TESTED)
+    - functions EXERCISE (add name to TESTED)  (PRACTICE #3)
         - open training/functions/math
             - implement sign(n) -> 'positive' > 0, 'negative' < 0, 'neutral' for 0
             - implement fib(n) -> nth Fibonacci number      HINT: how does range work
@@ -72,7 +70,7 @@
 
 6. FILES
 - opening files
-    - EXERCISE
+    - EXERCISE (PRACTICE #4)
         - open training/files/files
             - implement count_words_in_file
         - open training/files/requirements
