@@ -1,0 +1,79 @@
+0. INTRO
+- set 'display line numbers' in PyCharm
+- configure running tests, mark node as source root
+
+1. ABOUT PYTHON
+- high level general purpose language
+- Open Source by Python Software Foundation since early 80s
+- paradigms: object-oriented, functional, imperative (instruction sequence)
+- dynamic (no compilation)
+- dynamically-typed
+- garbage collector
+- pass by reference
+- no encapsulation (access modifiers)
+- multi-inheritance
+- Python 3 vs. Python 2
+- python interpreter
+
+2. DATA TYPES
+- string literals 'foo' or "foo"
+- int 42
+- float 3.1415927
+- bool (True, False)
+- list
+- tuple
+- set
+- dict
+- None
+
+3. PYTHON INTERPRETER
+    - fun with strings:
+        from training.strings_fun import FOX
+        - split words into list
+        - join them back together
+        - entail with reversed and join back together
+        - access at index FOX[6]
+        - select from [6:20]
+        - strip it
+        - try to assign some string to selection FOX[3:12] = 'abcd'
+        - multiply string
+        - string formatting '{0}, {1:2}'.format('x', 7.5) # {1:20}, {1:020}, {1:.4f}, {1:x}
+
+        - a bit about flow control EXERCISE
+            - controlled with indents
+            - introduce if
+            - variable = input(prompt)
+            - raise ValueError('wrong!')
+
+            - task: write ask_ok function which asks and returns True for 'y' or 'yes' and False for 'n' or 'no' and
+                    raises ValueError for other
+
+            - strings_fun.ask_ok
+            - strings_fun.custom_log
+
+4. PYTHON SYNTAX
+- comments: #, """, '''
+- control flow: if, elif, else, while, for, break, continue, pass
+- catching exceptions
+
+5. EXERCISES
+- defining functions
+    - functions EXERCISE (add name to TESTED)
+        - open training/functions/math
+            - implement sign(n) -> 'positive' > 0, 'negative' < 0, 'neutral' for 0
+            - implement fib(n) -> nth Fibonacci number      HINT: how does range work
+            - implement fin_up_to(n) -> list of Fibonacci numbers up to n (inclusively)
+        - open training/functions/parse
+            - implement count_words(words, line) -> counts words from list in line, returns dict
+            - implement count_words(words, line, case_sensitive=True)
+        - open training/functions/complex
+            - implement get_python_files - write function that returns a list of all python files in the tree of directory, passed as an argument, that are not __init__.py
+            - implement how_much_luck - returns {'lucky': x, 'unlucky': y}
+
+6. FILES
+- opening files
+    - EXERCISE
+        - open training/files/files
+            - implement count_words_in_file
+        - open training/files/requirements
+            - make it work ;)
